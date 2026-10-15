@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Address, office contacts and an enquiry form for Jaipur Engineering College (JEC), Kukas.">
+    <title>Contact — Jaipur Engineering College</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Shared header: identical on every page -->
+    <header id="top">
+      <p><a href="#main">Skip to main content</a></p>
+      <a href="index.html"><img src="images/logo.png" alt="Technoledge logo, home page" width="64" height="64"></a>
+      <p><strong>Jaipur Engineering College</strong></p>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Contact</h1>
+      <p>
+        Visit the campus, call an office, or send an enquiry.
+        Contact details were copied from the college website in October 2026 and may change.
+      </p>
+
+      <section id="address">
+        <h2>Address</h2>
+        <address>
+          Jaipur Engineering College<br>
+          SP-43, RIICO Industrial Area<br>
+          Delhi Road, Kukas<br>
+          Jaipur, Rajasthan 302028<br>
+          India
+        </address>
+        <p>
+          Phone: <a href="tel:+919694098821">+91 96940 98821</a><br>
+          Email: <a href="mailto:info@jeckukas.org.in">info@jeckukas.org.in</a><br>
+          Website: <a href="https://www.jeckukas.org.in/">www.jeckukas.org.in</a>
+        </p>
+      </section>
+
+      <section id="offices">
+        <h2>Offices</h2>
+
+        <!-- A table with links inside the cells -->
+        <table>
+          <caption>Who to contact</caption>
+          <thead>
+            <tr>
+              <th scope="col">Office</th>
+              <th scope="col">For</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Admission cell</th>
+              <td>Admission, counselling, documents</td>
+              <td><a href="mailto:admission@jeckukas.org.in">admission@jeckukas.org.in</a></td>
+              <td><a href="tel:+918875071333">+91 88750 71333</a></td>
+            </tr>
+            <tr>
+              <th scope="row">General enquiry</th>
+              <td>Any other question</td>
+              <td><a href="mailto:info@jeckukas.org.in">info@jeckukas.org.in</a></td>
+              <td><a href="tel:+919694098821">+91 96940 98821</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Training and placement</th>
+              <td>Internships and campus placements</td>
+              <td><a href="mailto:trainingandplacement@jeckukas.org.in">trainingandplacement@jeckukas.org.in</a></td>
+              <td><a href="tel:+918058799027">+91 80587 99027</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Exam and verification</th>
+              <td>Exam forms, results, document verification</td>
+              <td><a href="mailto:examinations.jec@gmail.com">examinations.jec@gmail.com</a></td>
+              <td><a href="tel:+918058799002">+91 80587 99002</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="enquiry">
+        <h2>Send an enquiry</h2>
+        <p>
+          Ready to apply instead? Go to the <a href="admission.html">admission form</a>.
+        </p>
+
+        <!-- No server yet, so the form opens thank-you.html. A real form would use method="post". -->
+        <form action="thank-you.html" method="get">
+          <p>
+            <label for="name">Your name (required)</label><br>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </p>
+
+          <p>
+            <label for="enquiry-email">Email (required)</label><br>
+            <input type="email" id="enquiry-email" name="email" autocomplete="email" required>
+          </p>
+
+          <p>
+            <label for="topic">Topic (required)</label><br>
+            <select id="topic" name="topic" required>
+              <option value="">Choose a topic</option>
+              <option value="admission">Admission</option>
+              <option value="exams">Examinations</option>
+              <option value="placements">Placements</option>
+              <option value="hostel">Hostel</option>
+              <option value="other">Something else</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="message">Message (required)</label><br>
+            <textarea id="message" name="message" rows="5" cols="40" minlength="10" required></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Send enquiry</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Shared footer: identical on every page -->
+    <footer>
+      <p>&copy; 2026 Student project about Jaipur Engineering College. Not the official college website.</p>
+      <p><a href="#top">Back to top</a></p>
+    </footer>
+  </body>
+</html>

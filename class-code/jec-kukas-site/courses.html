@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Undergraduate and postgraduate courses, seats and fees at Jaipur Engineering College (JEC), Kukas.">
+    <title>Courses — Jaipur Engineering College</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Shared header: identical on every page -->
+    <header id="top">
+      <p><a href="#main">Skip to main content</a></p>
+      <a href="index.html"><img src="images/logo.png" alt="Technoledge logo, home page" width="64" height="64"></a>
+      <p><strong>Jaipur Engineering College</strong></p>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Courses</h1>
+      <p>
+        JEC Kukas offers B.Tech and M.Tech courses in engineering.
+        Seat numbers were copied from the college website in October 2026. <strong>The fees are sample figures for a class project.</strong>
+        Check the <a href="https://www.jeckukas.org.in/">official JEC Kukas website</a> before you rely on any number here.
+      </p>
+
+      <nav aria-label="On this page">
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#undergraduate">Undergraduate courses</a></li>
+          <li><a href="#postgraduate">Postgraduate courses</a></li>
+          <li><a href="#fees">Fees</a></li>
+          <li><a href="#eligibility">Eligibility</a></li>
+        </ul>
+      </nav>
+
+      <section id="undergraduate">
+        <h2>Undergraduate courses</h2>
+
+        <!-- Table 1: thead, tbody and tfoot, with a cell that spans columns -->
+        <table>
+          <caption>B.Tech courses and seats</caption>
+          <thead>
+            <tr>
+              <th scope="col">Branch</th>
+              <th scope="col">Short name</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Seats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Civil Engineering</th>
+              <td>CE</td>
+              <td>4 years</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <th scope="row">Computer Science Engineering</th>
+              <td>CSE</td>
+              <td>4 years</td>
+              <td>180</td>
+            </tr>
+            <tr>
+              <th scope="row">Computer Science (Artificial Intelligence)</th>
+              <td>CS-AI</td>
+              <td>4 years</td>
+              <td>120</td>
+            </tr>
+            <tr>
+              <th scope="row">Electrical Engineering</th>
+              <td>EE</td>
+              <td>4 years</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <th scope="row">Electronics and Communication Engineering</th>
+              <td>ECE</td>
+              <td>4 years</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <th scope="row">Mechanical Engineering</th>
+              <td>ME</td>
+              <td>4 years</td>
+              <td>60</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="3">Total seats</th>
+              <td>510</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="postgraduate">
+        <h2>Postgraduate courses</h2>
+
+        <!-- Table 2: one cell spans several rows to group them -->
+        <table>
+          <caption>M.Tech courses and seats</caption>
+          <thead>
+            <tr>
+              <th scope="col">Degree</th>
+              <th scope="col">Specialisation</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Seats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="rowgroup" rowspan="5">M.Tech</th>
+              <td>Computer Science Engineering</td>
+              <td>2 years</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Digital Communication</td>
+              <td>2 years</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Power System</td>
+              <td>2 years</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Production Engineering</td>
+              <td>2 years</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Environmental Engineering</td>
+              <td>2 years</td>
+              <td>18</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="3">Total seats</th>
+              <td>90</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="fees">
+        <h2>Fees</h2>
+
+        <!-- Table 3: a two-level header. id and headers link each cell to its headings -->
+        <table>
+          <caption>Yearly fees in rupees (sample figures)</caption>
+          <thead>
+            <tr>
+              <th id="fee-course" rowspan="2">Course</th>
+              <th id="fee-year" colspan="2">Fee per year (₹)</th>
+              <th id="fee-total" rowspan="2">Total per year (₹)</th>
+            </tr>
+            <tr>
+              <th id="fee-tuition" headers="fee-year">Tuition</th>
+              <th id="fee-other" headers="fee-year">Other charges</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th id="fee-btech" headers="fee-course">B.Tech</th>
+              <td headers="fee-btech fee-year fee-tuition">30,000</td>
+              <td headers="fee-btech fee-year fee-other">8,000</td>
+              <td headers="fee-btech fee-total">38,000</td>
+            </tr>
+            <tr>
+              <th id="fee-mtech" headers="fee-course">M.Tech</th>
+              <td headers="fee-mtech fee-year fee-tuition">40,000</td>
+              <td headers="fee-mtech fee-year fee-other">8,000</td>
+              <td headers="fee-mtech fee-total">48,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="eligibility">
+        <h2>Eligibility</h2>
+
+        <h3>B.Tech</h3>
+        <ul>
+          <li>Class 12 with Physics, Chemistry and Mathematics</li>
+          <li>Admission on Class 12 merit or a JEE Main score</li>
+          <li>Counselling through REAP, the Rajasthan Engineering Admission Process</li>
+        </ul>
+
+        <h3>How to apply</h3>
+        <ol>
+          <li>Choose a branch from the <a href="#undergraduate">B.Tech table</a>.</li>
+          <li>Check the <a href="#fees">fees</a>.</li>
+          <li>Fill in the <a href="admission.html">admission form</a>.</li>
+          <li>Still unsure? <a href="contact.html#enquiry">Send an enquiry</a>.</li>
+        </ol>
+      </section>
+    </main>
+
+    <!-- Shared footer: identical on every page -->
+    <footer>
+      <p>&copy; 2026 Student project about Jaipur Engineering College. Not the official college website.</p>
+      <p><a href="#top">Back to top</a></p>
+    </footer>
+  </body>
+</html>

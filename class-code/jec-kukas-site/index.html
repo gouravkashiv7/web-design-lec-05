@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home page of a student-built website about Jaipur Engineering College (JEC), Kukas, Jaipur.">
+    <title>Home — Jaipur Engineering College</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Shared header: identical on every page -->
+    <header id="top">
+      <p><a href="#main">Skip to main content</a></p>
+      <a href="index.html"><img src="images/logo.png" alt="Technoledge logo, home page" width="64" height="64"></a>
+      <p><strong>Jaipur Engineering College</strong></p>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Jaipur Engineering College</h1>
+      <p>
+        Welcome to JEC Kukas, a private engineering college on Delhi Road in Kukas, Jaipur, Rajasthan.
+        The college is <strong>approved by AICTE</strong> and <strong>affiliated to RTU, Kota</strong>.
+      </p>
+
+      <!-- Hero image: informative, so the alt text describes it -->
+      <figure>
+        <img src="images/building.jpg" alt="Yellow and white four-storey college building beside a large green lawn, with hills in the distance" width="1200" height="801">
+        <figcaption>The main academic building of JEC Kukas, seen from above.</figcaption>
+      </figure>
+
+      <!-- Same-page links: each href matches an id further down -->
+      <nav aria-label="On this page">
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#explore">Explore the site</a></li>
+          <li><a href="#campus-photos">Campus photos</a></li>
+          <li><a href="#notices">Notices</a></li>
+          <li><a href="#calendar">Academic calendar</a></li>
+          <li><a href="#useful-links">Useful links</a></li>
+        </ul>
+      </nav>
+
+      <section id="explore">
+        <h2>Explore the site</h2>
+        <ul>
+          <li><a href="about.html">Read the history of the college</a></li>
+          <li><a href="courses.html">See the courses, seats and fees</a></li>
+          <li><a href="admission.html">Fill in the admission form</a></li>
+          <li><a href="contact.html">Find the address and office contacts</a></li>
+        </ul>
+      </section>
+
+      <section id="campus-photos">
+        <h2>Campus photos</h2>
+        <p>Three corners of the campus. The <a href="about.html#campus">About page</a> says more about each one.</p>
+
+        <figure>
+          <img src="images/library.jpg" alt="Students reading at long tables between rows of bookshelves in the library" width="1200" height="799">
+          <figcaption>The central library.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/hostel.jpg" alt="Four students studying together with books and a laptop in a hostel room" width="1200" height="800">
+          <figcaption>Group study in a hostel room.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/sports.jpg" alt="Students playing a basketball match on an outdoor court" width="1200" height="800">
+          <figcaption>A basketball match on the outdoor court.</figcaption>
+        </figure>
+      </section>
+
+      <section id="notices">
+        <h2>Notices</h2>
+
+        <!-- Each notice makes sense on its own, so each one is an article -->
+        <article>
+          <h3>Admission enquiries are open</h3>
+          <p><time datetime="2026-10-05">5 October 2026</time></p>
+          <p>
+            Students can now send questions about B.Tech admission through REAP counselling.
+            Use the <a href="admission.html">admission form</a> or the
+            <a href="contact.html#enquiry">enquiry form</a>.
+          </p>
+        </article>
+
+        <article>
+          <h3>Library hours extended before exams</h3>
+          <p><time datetime="2026-10-01">1 October 2026</time></p>
+          <p>The central library stays open until 8 pm on working days during the exam month.</p>
+        </article>
+      </section>
+
+      <section id="calendar">
+        <h2>Academic calendar</h2>
+        <p>A simple table: one header row, and each row starts with the event name.</p>
+
+        <table>
+          <caption>Academic calendar 2026–27 (sample dates)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Event</th>
+              <th scope="col">Starts</th>
+              <th scope="col">Ends</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Odd semester classes</th>
+              <td><time datetime="2026-07-20">20 July 2026</time></td>
+              <td><time datetime="2026-11-20">20 November 2026</time></td>
+            </tr>
+            <tr>
+              <th scope="row">Mid-semester tests</th>
+              <td><time datetime="2026-09-14">14 September 2026</time></td>
+              <td><time datetime="2026-09-19">19 September 2026</time></td>
+            </tr>
+            <tr>
+              <th scope="row">End-semester exams</th>
+              <td><time datetime="2026-12-01">1 December 2026</time></td>
+              <td><time datetime="2026-12-19">19 December 2026</time></td>
+            </tr>
+            <tr>
+              <th scope="row">Even semester classes</th>
+              <td><time datetime="2027-01-11">11 January 2027</time></td>
+              <td><time datetime="2027-05-07">7 May 2027</time></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="useful-links">
+        <h2>Useful links</h2>
+        <p>Four kinds of links, all made with the same <code>&lt;a&gt;</code> tag:</p>
+        <ul>
+          <li>Absolute: <a href="https://www.jeckukas.org.in/">Official JEC Kukas website</a></li>
+          <li>Absolute: <a href="https://www.rtu.ac.in/">RTU Kota, the affiliating university</a></li>
+          <li>Relative: <a href="courses.html">Courses page of this site</a></li>
+          <li>Same page: <a href="#calendar">Academic calendar on this page</a></li>
+          <li>Email: <a href="mailto:admission@jeckukas.org.in">Email the admission office</a></li>
+          <li>Phone: <a href="tel:+918875071333">Call the college office</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Shared footer: identical on every page -->
+    <footer>
+      <p>&copy; 2026 Student project about Jaipur Engineering College. Not the official college website.</p>
+      <p><a href="#top">Back to top</a></p>
+    </footer>
+  </body>
+</html>

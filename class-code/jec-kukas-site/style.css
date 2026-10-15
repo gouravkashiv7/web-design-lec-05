@@ -1,0 +1,31 @@
+/* The only CSS in this project: just enough to make the page and its
+   tables readable. Delete the <link> in any page and it still works. */
+body {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 0.5rem 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid;
+  padding: 0.4rem 0.8rem;
+  text-align: left;
+}

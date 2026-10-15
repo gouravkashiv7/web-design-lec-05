@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Admission form for B.Tech courses at Jaipur Engineering College (JEC), Kukas.">
+    <title>Admission — Jaipur Engineering College</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Shared header: identical on every page -->
+    <header id="top">
+      <p><a href="#main">Skip to main content</a></p>
+      <a href="index.html"><img src="images/logo.png" alt="Technoledge logo, home page" width="64" height="64"></a>
+      <p><strong>Jaipur Engineering College</strong></p>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Admission form</h1>
+      <p>
+        Apply for a B.Tech seat at JEC Kukas. Fields marked <strong>(required)</strong> must be filled in.
+        Not sure which branch to pick? See the <a href="courses.html#undergraduate">list of courses</a>.
+      </p>
+
+      <!--
+        This site has no server, so the form opens thank-you.html with method="get".
+        A real admission form would use method="post" and send the data to a server.
+      -->
+      <form action="thank-you.html" method="get">
+        <fieldset>
+          <legend>Personal details</legend>
+
+          <p>
+            <label for="fullname">Full name (required)</label><br>
+            <input type="text" id="fullname" name="fullname" autocomplete="name" minlength="3" required>
+          </p>
+
+          <p>
+            <label for="email">Email (required)</label><br>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </p>
+
+          <p>
+            <label for="phone">Mobile number, 10 digits (required)</label><br>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9]{10}" required>
+          </p>
+
+          <p>
+            <label for="dob">Date of birth (required)</label><br>
+            <input type="date" id="dob" name="dob" autocomplete="bday" min="1996-01-01" max="2010-12-31" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Academic details</legend>
+
+          <p>
+            <label for="course">Branch (required)</label><br>
+            <select id="course" name="course" required>
+              <option value="">Choose a branch</option>
+              <option value="ce">Civil Engineering</option>
+              <option value="cse">Computer Science Engineering</option>
+              <option value="cs-ai">Computer Science (Artificial Intelligence)</option>
+              <option value="ee">Electrical Engineering</option>
+              <option value="ece">Electronics and Communication Engineering</option>
+              <option value="me">Mechanical Engineering</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="percentage">Class 12 percentage (required)</label><br>
+            <input type="number" id="percentage" name="percentage" min="0" max="100" step="0.01" required>
+          </p>
+
+          <p>
+            <label for="rank">JEE Main rank</label><br>
+            <input type="number" id="rank" name="rank" min="1">
+          </p>
+        </fieldset>
+
+        <!-- Radio buttons: the legend is the question, each label is one answer -->
+        <fieldset>
+          <legend>Do you need a hostel room? (required)</legend>
+          <p>
+            <label><input type="radio" name="hostel" value="yes" required> Yes</label><br>
+            <label><input type="radio" name="hostel" value="no"> No</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Address</legend>
+
+          <p>
+            <label for="address">Home address (required)</label><br>
+            <textarea id="address" name="address" autocomplete="street-address" rows="4" cols="40" required></textarea>
+          </p>
+
+          <p>
+            <label for="pincode">PIN code, 6 digits (required)</label><br>
+            <input type="text" id="pincode" name="pincode" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{6}" required>
+          </p>
+        </fieldset>
+
+        <!-- Wrapping the checkbox in its label makes the whole line clickable -->
+        <p>
+          <label>
+            <input type="checkbox" name="confirm" value="yes" required>
+            I confirm these details are correct (required)
+          </label>
+        </p>
+
+        <p>
+          <button type="submit">Submit application</button>
+          <button type="reset">Clear form</button>
+        </p>
+      </form>
+
+      <section>
+        <h2>Need help?</h2>
+        <p>
+          <a href="contact.html#enquiry">Send an enquiry</a> or
+          <a href="mailto:admission@jeckukas.org.in">email the admission office</a>.
+        </p>
+      </section>
+    </main>
+
+    <!-- Shared footer: identical on every page -->
+    <footer>
+      <p>&copy; 2026 Student project about Jaipur Engineering College. Not the official college website.</p>
+      <p><a href="#top">Back to top</a></p>
+    </footer>
+  </body>
+</html>
